@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="pizza.css">
+		<script src="jquery-2.1.4.min.js"></script>
+
+		<script>
+			$(document).ready(function(){
+				
+				// voeg pizza toe
+				$(".addPizza").on("click", function(){
+					var input = $("#inputPizza").val();
+					var pizza = "<div class='bestelling'><div class='omschrijving'>"+input+"</div><div class='waardering'><div class='likes'>1</div><div class=''><a href='#' class='addLike'>Aantal</a></div></div><div class='addComments'><input type='text' class='inputComment'/><button class='addComment'>Voeg toe</button></div><div class='comments'></div>";
+					$("#bestellingen").append(pizza);
+				});
+
+				// like de pizza
+				$("body").on("click", ".addLike", function(){
+					var likes = $(this).parent().siblings(".likes").text();
+					likes++;
+					$(this).parent().siblings(".likes").text(likes);
+				});
+
+				$("body").on("click", ".addComment", function(){
+					var input = $(this).siblings(".inputComment").val();
+					var comment = "<div class='comment'><div class='message'>"+input+"</div><div class='commentControl'><a href='#' class='removeComment'>Verwijder</a></div></div>";
+					$(this).parent().siblings(".comments").append(comment);
+				});				
+
+				$("body").on("click", "a.removeComment", function(){
+					$(this).closest('.comment').remove();
+				});
+
+				$("body").on("click", "a.removePizza", function(){
+					$(this).closest('.bestelling').remove();
+				});
+			});			
+		</script>		
+	</head>
+	<body>
+		<div class="addPizzas">
+			<input type="text" id="inputPizza"/>
+			<button class="addPizza">Voeg toe</button>			
+		</div>
+		<div id="bestellingen">
+			<div class="bestelling">				
+				<div class="omschrijving">Quotro stagioni</div>
+				<div class="waardering">
+					<div class="likes">1</div>
+					<div class=""><a href="#" class="addLike">Aantal</a></div>
+				</div>
+				<div class="addComments">
+					<input type="text" class="inputComment"/>
+					<button class="addComment">Voeg toe</button>
+				</div>
+				<div class="comments">
+					<div class="comment">
+						<div class="message">Geen mozerella</div>
+						<div class="commentControl">
+							<a href="#" class="removeComment">Verwijder</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</body>
+</html>
