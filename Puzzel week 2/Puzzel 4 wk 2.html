@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<meta charset="UTF-8">
+	<title>Puzzel 4</title>
+
+	<script>
+		$(document).ready(function(){
+			$('#field').text('');
+			$('#button').click(function(){
+				var woord1 = $('#woord1').val();
+				var woord2 = $('#woord2').val();
+				if (woord1 > woord2) {
+					$('#field').text('Woord 1 is langer dan woord 2');
+				}
+				if (woord1 < woord2){
+					$('#field').text('Woord 2 is langer dan woord 1');
+				}
+				if (woord1 == woord2){
+					$('#field').text('Woord 1 en woord 2 zijn gelijk aan elkaar');
+				}
+			});
+		});
+		</script>
+	</head>
+	<body>
+
+
+		<form name="form" action="" id="form">
+			Woord 1: <input type="text" id="woord1" value="" size="5"> </br>
+			Woord 2: <input type="text" id="woord2" value="" size="5"> </br>
+		</form>
+		</br>
+		<button id="button">Vergelijken</button>
+			<p id="field"></p>
+
+
+
+
+
+	</body>
+	</html>
