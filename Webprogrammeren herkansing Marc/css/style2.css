@@ -1,0 +1,136 @@
+body{
+	background:#f0f0f0;
+	font: 14px/20px Arial, San-Serif;
+	color:#000;
+	margin:0;
+}
+
+header{
+	background: #0000ff;
+	width:100%;
+	height:86px;
+	top:0;
+	left:0;
+}
+a{
+	color:#FFF;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 150%;
+}
+a:hover{
+	color:#9999ff;
+	text-decoration: underline;
+}
+#logo{
+	margin:20px;
+	float:left;
+	width:150px;
+	height:50px;
+	background: url("../img/cookiebook15050.png") no-repeat center;
+}
+nav{
+	float:right;
+	padding:35px 20px 20px 0px;
+}
+ul{
+	list-style: none;
+}
+nav ul li{
+	display: inline-block;
+	float:left;
+	padding:10px;
+}
+#container2{
+	background-color: #6b6b6b;
+	width: 1080px;
+	height:720px;
+	float: left;
+	margin: auto auto;
+	margin-left: 400px;
+	border: 5px;
+}
+#container3{
+	background-color: #6b6b6b;
+	width: 500px;
+	height:1080px;
+	float: left;
+}
+#timeline{
+	padding: 40px 0px 0px 10px;
+}
+.tekstlink{
+	color: black;
+}
+#post1{
+	margin-top: 30px;
+	background-color: #d7d7d8;
+	border:5px solid #4d4f53;
+	height: 100px;
+}
+.profielmarc{
+	float:left;
+	border-right: 5px solid #4d4f53;
+}
+.postwelkom{
+	float:right;
+	margin-right:300px;
+	margin-top: 35px;
+}
+.addLike{
+	margin-left: 10px;
+	font-size: 80%;
+}
+.berichten .bericht{
+	border: 5px solid black;
+}
+#bg{
+	border: solid black 5px;
+	float:left;
+	width:300px;
+	margin-top: 50px;
+}
+#bg2{
+	float:left;
+	width:300px;
+	height:238px; 
+	border: solid black 5px;
+	margin-left:50px;
+	margin-top: 50px;
+}
+.allevrienden{
+	padding-left: 10px;
+}
+.verwijdervriendbutton{
+	margin-top: -10px;
+	display: block;
+	margin-left: 150px;
+	text-align: center;
+}
+.addvriendknop{
+	margin-top: -10px;
+	display: block;
+	margin-left: 150px;
+	text-align: center;
+}
+h2{
+	text-align: center;
+}
+.removeBericht{
+	margin-left: 10px;
+	font-size: 80%;
+}
+.likes{
+	font-size: 120%;
+}
+.omschrijving{
+	font-size: 150%;
+}
+.likes{
+	margin-top: 5px;
+
+}
+.removeComment{
+	margin-left: 10px;
+	font-size: 80%;
+}
